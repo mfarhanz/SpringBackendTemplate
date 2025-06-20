@@ -381,7 +381,6 @@ public class AuthService {
             sessionToken.setUser(user);
             sessionToken.setType(TokenType.PASSWORD_RESET_SESSION);
             sessionToken.setExpiry(LocalDateTime.now().plusMinutes(15));
-//            deleteToken(resetToken, user);				// Invalidate token after success
             saveToken(sessionToken, user);
             token.put("session-token", sessionCode);
             return token;
