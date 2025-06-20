@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+    <Properties>
+        <Property name="LOG_HOME">logs</Property>
+    </Properties>
+
+    <Appenders>
+        <!-- Daily file appender inside monthly folders -->
+        <RollingFile name="FileAppender"
+                     fileName="${LOG_HOME}/latest.log"
+                     filePattern="${LOG_HOME}/%d{yyyy-MM}/app-%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} | %t | %-5level | %logger{36} | %msg%n"/>
+            <Policies>
+                <!-- Rollover every day -->
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <!-- Keep up to 30 log files per folder -->
+            <DefaultRolloverStrategy max="30"/>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <AsyncRoot level="info">
+            <AppenderRef ref="FileAppender"/>
+        </AsyncRoot>
+    </Loggers>
+</Configuration>
