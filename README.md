@@ -1,6 +1,6 @@
 # Spring Boot Backend Template
 
-A production-ready, extensible backend boilerplate built with Java and Spring Boot — designed to save developers hours of setup time for full-stack applications.
+A production-ready, extensible backend boilerplate built with Java and Spring Boot — designed to save developers hours of setup time when building full-stack applications.
 
 This template provides a secure, scalable, and modular starting point with built-in authentication, role management, database migrations, and common backend utilities. It’s ideal for solo developers, rapid prototyping, or small teams looking to kickstart backend development without reinventing the wheel.
 
@@ -48,7 +48,7 @@ This template provides a secure, scalable, and modular starting point with built
 
 ## Use Case
 
-This template is intended for **developers** as a solid starting point for backend services in full-stack apps. You can customize and extend it to fit your project needs. Whether you're building a mobile app, a web dashboard, or an internal tool, this backend gives you:
+This template provides developers with a solid starting point for building backend services in full-stack applications. You can customize and extend it to fit your project needs. Whether you're building a mobile app, a web dashboard, or an internal tool, this backend gives you:
 
 - A working JWT auth system out of the box
 - Basic role-based access to endpoints
