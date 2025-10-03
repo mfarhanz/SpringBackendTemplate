@@ -6,6 +6,9 @@ logs/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
+.env
+src/main/resources/application.properties
+src/main/resources/application-postgres.properties
 
 ### STS ###
 .apt_generated
